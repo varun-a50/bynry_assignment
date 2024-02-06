@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040369952210",
+    "project_id": "bynry-assignment-907c8",
+    "storage_bucket": "bynry-assignment-907c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040369952210:android:31c149dff2c4f94f93d40b",
+        "android_client_info": {
+          "package_name": "com.example.bynry_assignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJgb5BOrIB2YbfzJ9VPD-cQXfb8CWd7iA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
