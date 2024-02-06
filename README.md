@@ -1,16 +1,8 @@
-# bynry_assignment
+ID: bynry@gmail.com
+pass: 123456
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![b3](https://github.com/varun-a50/bynry_assignment/assets/56962637/57a6f5ad-30e8-4000-a6a3-f60b2ea9c111)
+![b2](https://github.com/varun-a50/bynry_assignment/assets/56962637/3e437ed6-1b13-417c-b613-389954a75570)
+![b1](https://github.com/varun-a50/bynry_assignment/assets/56962637/a996c9c3-78f7-4441-b4ad-77251258ab4b)
+![b4](https://github.com/varun-a50/bynry_assignment/assets/56962637/26d33d1a-272b-4feb-9894-9b9cdd42076c)
