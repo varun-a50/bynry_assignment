@@ -30,23 +30,23 @@ class _LoginScreen extends State<LoginScreen> {
       });
     } on FirebaseAuthException catch (e) {
       setState(() {
+        isLoading = true;
+      });
+      if (e.code == 'user-not-found' || e.code == 'wrong-password') {
+        ScaffoldMessenger.of(context).clearSnackBars();
+
+        print('User not found or wrong password');
+      }
+      setState(() {
         isLoading = false;
       });
-      if (e.code == 'user-not-found') {
-        // ignore: use_build_context_synchronously
-        return ScaffoldMessenger.of(context)
-            .showSnackBar(const SnackBar(content: Text('user not found')));
-      } else if (e.code == 'wrong-password') {
-        // ignore: use_build_context_synchronously
-        return ScaffoldMessenger.of(context)
-            .showSnackBar(const SnackBar(content: Text('user not found')));
-      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       body: Stack(
         children: [
@@ -80,17 +80,21 @@ class _LoginScreen extends State<LoginScreen> {
               ],
             ),
           ),
-          Positioned(
-            top: 240,
-            bottom: 40,
-            child: Container(
-              width: width,
-              height: 500,
-              decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 225, 225, 228),
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(36),
-                  topRight: Radius.circular(36),
+          Container(
+            height: 400,
+            margin: const EdgeInsets.only(top: 250),
+            child: Positioned(
+              top: 500,
+              bottom: 40,
+              child: Container(
+                width: width,
+                height: 500,
+                decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 225, 225, 228),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(36),
+                    topRight: Radius.circular(36),
+                  ),
                 ),
               ),
             ),
@@ -179,8 +183,10 @@ class _LoginScreen extends State<LoginScreen> {
                   width: 4,
                 ),
                 TextButton(
-                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const TabsScreen())),
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('not developed')));
+                  },
                   child: const Text(
                     'Sign Up',
                     style: TextStyle(
